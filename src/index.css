@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  
+  .btn-viewproduct {
+    @apply py-2 pr-4 inline-flex items-center rounded border border-black px-2.5 py-1.5 text-sm font-medium text-black shadow-sm scale-100 hover:scale-105 ease-in duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2;
+  }
+  .input-label{
+    @apply mb-2 block text-sm font-medium text-gray-700
+  }
+  .input-view{
+    @apply mb-2 text-xl font-bold tracking-tight text-gray-900 
+  }
+
+  .image-frame{
+    @apply rounded overflow-hidden md:col-span-1 px-4 sm:px-0 lg:my-4 mx-auto max-w-lg
+  }
+  .view-image{
+    @apply  object-scale-down h-80 w-full
+  }
+
+  .input-frame{
+    @apply block py-2 w-full pl-2 rounded-md border-gray-900 border shadow-sm  sm:text-sm
+  }
+
+  .header-text{
+    @apply text-2xl font-bold tracking-tight sm:text-2xl inline-flex items-center text-gray-900 
+  }
+
+
+
+
+.input-button{
+  @apply items-center inline-flex  rounded  px-2.5 py-1.5 text-lg font-medium text-white shadow-sm scale-100 hover:scale-105 ease-in duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2
+}
+  
+.input-form-frame{
+  @apply  rounded-md mt-4 md:col-span-2 
+}
+
+.input-form-topinput{
+  @apply space-y-6 shadow rounded border border-gray-50 px-4 py-4 sm:p-6
+}
+.input-form-bottom{
+  @apply shadow bg-gray-50 px-4 py-3 text-right sm:px-6 space-x-2
+}
+
+
+
+
+
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.btn2:hover span{
+  transform: translateX(0)
+}
+
+
+.fadeMe {
+  animation:fadeIn 0.5s linear;
+}
+
+.fadeMe2 {
+  animation:fadeIn 1.3s linear;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity:0
+  }
+  
+  100% {
+    opacity:1;
+  }
+}
+
+.fadeMe.none {
+  display:none
+}
+
+
+.sticky {
+  position: sticky; top: 0;
+}
